@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cards Printer</title>
+	<link rel="stylesheet" href="/public/css/style.css">
+	<link href="http://cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <script src="/babel/browser.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.2/featherlight.min.js"></script>
+
+  <script type="text/babel">
+    $(() => {
+      let socket = io.connect();
+    })
+  </script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Card Printing Service</h1>
+		</div>
+		<div class="controls">
+			<a href="#" id="processBtn" class="inactive">
+        Process {{recordCount}} Cards
+      </a>
+		</div>
+		<div class="outputList">
+			<div class="entity">
+				<p class="serialNo">1. </p>
+				<p class="studentName">John Doe</p>
+				<p class="course">CCDE - Modular</p>
+				<a href="#" class="viewCard" data-featherlight="">View Card</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
