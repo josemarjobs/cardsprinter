@@ -22,5 +22,13 @@ module.exports = function(options) {
     handler: {
       file: 'node_modules/babel-core/browser.min.js'
     }
+  }, {
+    method: 'GET',
+    path: '/output/{param*}',
+    handler: {
+      directory: {
+        path: '../output'
+      }
+    }
   }];
 }

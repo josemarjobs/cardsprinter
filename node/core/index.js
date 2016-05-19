@@ -21,6 +21,7 @@ function core(server, options, next) {
   }, (error) => {
     if (error) {
       console.log('There was en error loading the main plugin');
+      server.log('error', 'There was en error loading the main plugin');
     }
   });
   return next();

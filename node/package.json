@@ -2,15 +2,16 @@
   "name": "cardsprinter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --harmony-spreadcalls app.js"
   },
   "author": "Josemar Magalhaes",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^5.8.22",
     "dotenv": "^1.2.0",
+    "good": "^6.4.0",
+    "good-file": "^5.1.0",
     "handlebars": "^3.0.3",
     "hapi": "^10.0.0",
     "inert": "^3.0.1",
