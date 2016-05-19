@@ -9,6 +9,10 @@ Instructions
 
 For any issues/help, write to mailme@sachinbhatnagar.com
 
-Run apollo
+1. Run apollo
 $ cd ~/apollo/broker/brokerbot
 $ ./bin/apollo-broker run
+
+2. Run the Python Script
+
+3. Run the node app
